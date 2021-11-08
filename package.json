@@ -4,14 +4,12 @@
   "description": "basic cypress test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
   },
   "author": "gml9812 <hee.jun.yun@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^8.7.0"
-  },
-  "scripts": {
-     "cypress:open": "cypress open"
   }
 }
