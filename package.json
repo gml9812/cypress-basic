@@ -1,0 +1,17 @@
+{
+  "name": "cypress-basic",
+  "version": "1.0.0",
+  "description": "basic cypress test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gml9812 <hee.jun.yun@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.7.0"
+  },
+  "scripts": {
+     "cypress:open": "cypress open"
+  }
+}
