@@ -10,8 +10,27 @@ export default function Counter({ $app }) {
         `
     };
 
+    const addEvent = () => {
+        const counter = document.querySelector(".counter");
+        const plusBtn = document.querySelector(".plus-button");
+        const minusBtn = document.querySelector(".minus-button");
+
+        const plusCounter = () => {
+            counter.value++;
+        };
+
+        const minusCounter = () => {
+            counter.value--;
+        };
+
+        plusBtn.addEventListener("click", plusCounter);
+        minusBtn.addEventListener("click", minusCounter);
+    };
+
+
     const init = () => {
         render();
+        addEvent();
     };
 
     init();
