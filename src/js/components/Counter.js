@@ -16,10 +16,16 @@ export default function Counter({ $app }) {
         const minusBtn = document.querySelector(".minus-button");
 
         const plusCounter = () => {
+            if (counter.value > 12) {
+                return;
+            }
             counter.value++;
         };
 
         const minusCounter = () => {
+            if (counter.value < 8) {
+                return;
+            }
             counter.value--;
         };
 

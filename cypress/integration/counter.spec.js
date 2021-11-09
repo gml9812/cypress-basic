@@ -36,11 +36,7 @@ describe("test counter", () => {
     });
 
     it("counter min is 7", () => {
-        //cy.get("[data-cy=minus-button]").click().click().click().click();
-
-        for(let i=0; i<10; i++){
-            cy.get("[data-cy=minus-button]").click();
-        }
+        cy.get("[data-cy=minus-button]").click().click().click().click();
         cy.get("[data-cy=counter]").should("have.value","7");
     });
 });
